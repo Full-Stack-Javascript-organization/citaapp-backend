@@ -10,16 +10,16 @@ class CalendarService {
     try {
       const result = await this.calendarRepository.createCalendar(calendarData);
 
-      const notification = new NotificationService();
+  //     const notification = new NotificationService();
 
-  const toEmail = calendarData.reservationby;
+  // const toEmail = calendarData.reservationby;
 
-  console.log('toEmail' + toEmail);
+  // console.log('toEmail' + toEmail);
 
-  await notification.sendNotification(toEmail,{
-    subject: `CitApp Notification Services`,
-    text: `Your appointmet for ${calendarData.name} was done.`
-  });
+  // await notification.sendNotification(toEmail,{
+  //   subject: `CitApp Notification Services`,
+  //   text: `Your appointmet for ${calendarData.name} was done.`
+  // });
 
   return result;
     } catch (err) {
