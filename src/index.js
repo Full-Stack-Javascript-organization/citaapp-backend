@@ -1,11 +1,11 @@
 const express = require('express');
-const connectDB = require('./src/config/database');
-const userRoutes = require('./src/routes/user');
-const companyRoutes = require('./src/routes/company');
-const serviceRoutes = require('./src/routes/service');
-const calendarRoutes = require('./src/routes/calendar');
+const connectDB = require('./config/database');
+const userRoutes = require('./routes/user');
+const companyRoutes = require('./routes/company');
+const serviceRoutes = require('./routes/service');
+const calendarRoutes = require('./routes/calendar');
 const cors = require('cors');
-const NotificationService = require('./src/app/services/notificationService');
+const NotificationService = require('./app/services/notificationService');
 
 
 //const bodyParser = require('body-parser');
