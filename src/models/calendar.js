@@ -8,7 +8,6 @@ const calendarSchema = new mongoose.Schema({
   description: {
     type: String,
     required: true,
-    unique: true,
   },
   companyid: {
     type: String,
