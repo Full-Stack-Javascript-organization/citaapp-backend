@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 require('dotenv').config()
 
 const connectDB = require('./config/database');
-const userRoutes = require('./routes/user');
+//const userRoutes = require('./routes/user');
 const companyRoutes = require('./routes/company');
 const serviceRoutes = require('./routes/service');
 const calendarRoutes = require('./routes/calendar');
@@ -27,7 +27,7 @@ app.use(function(req, res, next) {
 
 connectDB();
 
-app.use('/users', userRoutes);
+//app.use('/users', userRoutes);
 app.use('/company', companyRoutes);
 app.use('/service', serviceRoutes);
 app.use('/calendar', calendarRoutes);
