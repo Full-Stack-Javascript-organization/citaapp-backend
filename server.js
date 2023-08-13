@@ -3,12 +3,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config()
 
-const connectDB = require('./src/config/database');
-const userRoutes = require('./src/routes/user');
-const companyRoutes = require('./src/routes/company');
-const serviceRoutes = require('./src/routes/service');
-const calendarRoutes = require('./src/routes/calendar');
-const NotificationService = require('./src/app/services/notificationService');
+const connectDB = require('./config/database');
+const userRoutes = require('./routes/user');
+const companyRoutes = require('./routes/company');
+const serviceRoutes = require('./routes/service');
+const calendarRoutes = require('./routes/calendar');
+const NotificationService = require('./app/services/notificationService');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
