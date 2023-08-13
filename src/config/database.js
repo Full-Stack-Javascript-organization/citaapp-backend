@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
+require('dotenv').config()
 
 const connectDB = async () => {
   try {
-    //const connectionString = "mongodb://localhost:27017/citas";
-    const connectionString = process.env.ATLAS_URI;
+    //const connectionString = 'mongodb+srv://brero12:Q8941Fxd34Tnoikw@brcluster0.c3pdivh.mongodb.net/citas';
+    const connectionString = process.env.MONGO_URI;
     await mongoose.connect(connectionString, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
